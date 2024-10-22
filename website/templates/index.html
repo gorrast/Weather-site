@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wind Data Visualization</title>
+        <link rel="stylesheet" href="../styles.css" type="text/css">
+        
+    </head>
+
+    <body>
+        
+        <h1>Wind Data Visualization</h1>
+        <button name="button" value="OK" type="button" onclick="update()">Click to update</button>
+        <section>
+            <h2>Wind Speed</h2>
+            <a class="btn" href="{ url_for('show_wind', location='Stockholm,+Sweden') }" target="_blank"><button type="button">Stockholm, Sweden</button></a>
+            <a class="btn" href="{ url_for('show_wind', location='London,+United+Kingdom') }" target="_blank"><button type="button">London, UK</button></a>
+            <a class="btn" href="{ url_for('show_wind', location='New+York,+United+States+of+America') }" target="_blank"><button type="button">New York, USA</button></a>
+            <a class="btn" href="{ url_for('show_wind', location='Los+Angeles,+United+States+of+America') }" target="_blank"><button type="button">LA, USA</button></a>
+            <a class="btn" href="{ url_for('show_wind', location='New+Delhi,+India') }" target="_blank"><button type="button">New Delhi, India</button></a>
+            <a class="btn" href="{ url_for('show_wind', location='Tokyo,+Japan') }" target="_blank"><button type="button">Tokyo, Japan</button></a>
+            
+        </section>
+        <section>
+            <h2>Temperature</h2>
+            <a class="btn" href="{ url_for('show_temp', location='Stockholm,+Sweden') }" target="_blank"><button type="button">Stockholm, Sweden</button></a>
+            <a class="btn" href="{ url_for('show_temp', location='London,+United+Kingdom') }" target="_blank"><button type="button">London, UK</button></a>
+            <a class="btn" href="{ url_for('show_temp', location='New+York,+United+States+of+America') }" target="_blank"><button type="button">New York, USA</button></a>
+            <a class="btn" href="{ url_for('show_temp', location='Los+Angeles,+United+States+of+America') }" target="_blank"><button type="button">LA, USA</button></a>
+            <a class="btn" href="{ url_for('show_temp', location='New+Delhi,+India') }" target="_blank"><button type="button">New Delhi, India</button></a>
+            <a class="btn" href="{ url_for('show_temp', location='Tokyo,+Japan') }" target="_blank"><button type="button">Tokyo, Japan</button></a>
+    
+        </section>
+    </body>
+
+    </html>
