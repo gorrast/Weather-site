@@ -207,10 +207,8 @@ def setup_logging(log_filename):
     if not logger.hasHandlers():
         logger.setLevel(logging.INFO) # Set the minimum level to capture (INFO and above)
 
-        username = os.getlogin()
-
         #define log format
-        formatter = logging.Formatter(f'%(asctime)s - %(levelname)s - [User: {username}] - %(message)s')
+        formatter = logging.Formatter(f'%(asctime)s - %(levelname)s  - %(message)s')
 
         # Create a file handler (using RotateFileHandler to manage file size)
         file_handler = logging.FileHandler(log_filename, mode='a')
